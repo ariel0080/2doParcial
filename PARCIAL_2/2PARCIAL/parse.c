@@ -71,32 +71,3 @@ int parsereEmpleado(FILE* pFile, ArrayList* pArrayListEmpleado)
     return 0;
 }
 
-
-
-
-int guardarEnArchivo(eEmpleado *empleados, int cantidad, FILE *archivo)
-{
-
-    int i=0;
-
-    archivo=fopen("data_out.csv","w");
-    if(archivo== NULL)
-    {
-        return 1;
-    }
-    else
-    {
-        while(i!=cantidad)
-        {
-            fprintf(archivo,"%d,%s,%s,%d\n", (empleados+i)->id,(empleados+i)->nombre,(empleados+i)->direccion);
-            i++;
-        }
-        printf("\n-------------------------------\n");
-        printf("\nSe guardo la informacion con exito\n");
-        printf("\n-------------------------------\n");
-
-    }
-
-    fclose(empleados);
-    return 0;
-}

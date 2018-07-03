@@ -1,11 +1,12 @@
-Ariel,las heras 10,0,200,0
-Juan,Tres Arroyo 100,1,150,1345477682
-Trevor,Sobremonte 200,2,100,0
-Bruno,Hernandez 300,3,89,0
-Lucila, chaca 34,4,100,0
-Marcos, Juncal 34,5,120,3938224
-Tito, Marcos Sastre 23,6,130,3932356
-Maria, Calle 12 2233,7,144,50397953
-Celeste, Av. Libertador 232,8,233,35652128
-Hugo, Mitre 3222,9,134,58786320
-Luis, Av Brandsen 2322,10,212,35652096
+NOMBRE,DIRECCION,ID,HORAS,SUELDO
+Ariel,las heras 10,0,200,70000
+Bruno,Hernandez 300,3,89,16020
+Celeste, Av. Libertador 232,8,233,81550
+Hugo, Mitre 3222,9,134,32160
+Juan,Tres Arroyo 100,1,150,36000
+Lucila, chaca 34,4,100,18000
+Luis, Av Brandsen 2322,10,212,74200
+Marcos, Juncal 34,5,120,21600
+Maria, Calle 12 2233,7,144,34560
+Tito, Marcos Sastre 23,6,130,31200
+Trevor,Sobremonte 200,2,100,18000

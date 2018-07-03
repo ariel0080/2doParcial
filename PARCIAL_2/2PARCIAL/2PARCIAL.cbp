@@ -49,6 +49,7 @@
 		<Unit filename="parse.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="parse.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -12,7 +12,7 @@ void guardarArchivo(ArrayList* empleados)
     char n[50];
     char d[50];
 
-
+    fprintf(miArchivo,"NOMBRE,DIRECCION,ID,HORAS,SUELDO\n");
     for(int i=0;i<al_len(empleados);i++)
     {
         eEmpleado* tmp=al_get(empleados,i);

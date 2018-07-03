@@ -2,62 +2,68 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="parse.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="325" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="funciones.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="113" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="ArrayList.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="13634" topLine="498" />
-		</Cursor>
-	</File>
 	<File name="funciones.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="44" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="eEmpleado.h" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2186" topLine="70" />
-		</Cursor>
-	</File>
-	<File name="eEmpleado.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3304" topLine="24" />
-		</Cursor>
-		<Folding>
-			<Collapse line="6" />
-			<Collapse line="23" />
-			<Collapse line="34" />
-			<Collapse line="45" />
-			<Collapse line="55" />
-			<Collapse line="65" />
-			<Collapse line="75" />
-			<Collapse line="80" />
-			<Collapse line="85" />
-			<Collapse line="90" />
-			<Collapse line="99" />
-			<Collapse line="108" />
-			<Collapse line="119" />
-			<Collapse line="124" />
-			<Collapse line="129" />
-			<Collapse line="153" />
-		</Folding>
-	</File>
-	<File name="eEmpleado.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="262" topLine="0" />
+			<Cursor1 position="471" topLine="5" />
 		</Cursor>
 	</File>
 	<File name="ArrayList.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="365" topLine="0" />
+			<Cursor1 position="365" topLine="87" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2380" topLine="91" />
+		</Cursor>
+	</File>
+	<File name="parse.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="66" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="parse.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="308" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="eEmpleado.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1332" topLine="2" />
+		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+			<Collapse line="28" />
+			<Collapse line="39" />
+			<Collapse line="48" />
+			<Collapse line="59" />
+			<Collapse line="70" />
+			<Collapse line="81" />
+			<Collapse line="91" />
+			<Collapse line="101" />
+			<Collapse line="111" />
+			<Collapse line="116" />
+			<Collapse line="121" />
+			<Collapse line="126" />
+			<Collapse line="135" />
+			<Collapse line="145" />
+			<Collapse line="150" />
+			<Collapse line="157" />
+		</Folding>
+	</File>
+	<File name="ArrayList.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7941" topLine="311" />
+		</Cursor>
+	</File>
+	<File name="funciones.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="283" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

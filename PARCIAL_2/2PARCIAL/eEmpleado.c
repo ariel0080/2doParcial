@@ -3,6 +3,9 @@
 #include <string.h>
 #include "eEmpleado.h"
 
+
+//FUNCION UTILIZADA DENTRO DE AL_SORT
+
 int compareeEmpleado(void* pEmployeeA,void* pEmployeeB)
 {
 
@@ -20,6 +23,8 @@ int compareeEmpleado(void* pEmployeeA,void* pEmployeeB)
 }
 
 
+//FUNCIONES PARA MOSTRAR DATOS
+
 void m_empleado_sueldo(eEmpleado* lEmp)
 {
     printf("\nNOMBRE\t\tDIRECCION\t\t\tID\t\tSUELDO\n\n");
@@ -30,6 +35,37 @@ void m_empleado_sueldo(eEmpleado* lEmp)
                     printeEmpleado_sueldo(aux);
                 }
 }
+
+void printeEmpleado_sueldo(eEmpleado* p)
+{
+    char d[51];
+    char n[51];
+    get_Empleado_nombre(p,n);
+    get_Empleado_direccion(p,d);
+    printf("%s\t\t%s\t\t\%d\t\t%d\n",n,d,get_Empleado_id(p),get_Empleado_sueldo(p));
+}
+
+void m_empleado(eEmpleado* lEmp)
+{
+    printf("\nNOMBRE\t\tDIRECCION\t\t\tID\n\n");
+    eEmpleado* aux;
+    for (int i=0; i<al_len(lEmp); i++ )
+                {
+                    aux=(eEmpleado*)al_get(lEmp,i);
+                    printeEmpleado(aux);
+                }
+}
+
+void printeEmpleado(eEmpleado* p)
+{
+    char d[51];
+    char n[51];
+    get_Empleado_nombre(p,n);
+    get_Empleado_direccion(p,d);
+    printf("%s\t\t%s\t\t\%d\n",n,d,get_Empleado_id(p));
+}
+
+//CONSTRUCTOR
 
 eEmpleado* neweEmpleado(void)
 {
@@ -87,15 +123,6 @@ void get_Empleado_direccion(eEmpleado* p,char* direccion)
     strcpy(direccion,p->direccion);
 }
 
-void printeEmpleado_sueldo(eEmpleado* p)
-{
-    char d[51];
-    char n[51];
-    get_Empleado_nombre(p,n);
-    get_Empleado_direccion(p,d);
-    printf("%s\t\t%s\t\t\%d\t\t%d\n",n,d,get_Empleado_id(p),get_Empleado_sueldo(p));
-}
-
 int set_Empleado_hora(eEmpleado* p,int h)
 {
     if (p!=NULL)
@@ -114,7 +141,6 @@ int set_Empleado_sueldo(eEmpleado* p,int s)
     }
     return 0;
 }
-//GETTERS
 
 int get_Empleado_hora(eEmpleado* p)
 {
@@ -125,6 +151,8 @@ int get_Empleado_sueldo(eEmpleado* p)
 {
     return p->sueldo;
 }
+
+//FUNCION UTILIZADA DENTRO DE MAP PARA CALCULAR SUELDO
 
 int calc_suel_Empleado(void* empleado)
 {
@@ -150,22 +178,4 @@ int calc_suel_Empleado(void* empleado)
     }
 }
 
-void m_empleado(eEmpleado* lEmp)
-{
-    printf("\nNOMBRE\t\tDIRECCION\t\t\tID\n\n");
-    eEmpleado* aux;
-    for (int i=0; i<al_len(lEmp); i++ )
-                {
-                    aux=(eEmpleado*)al_get(lEmp,i);
-                    printeEmpleado(aux);
-                }
-}
 
-void printeEmpleado(eEmpleado* p)
-{
-    char d[51];
-    char n[51];
-    get_Empleado_nombre(p,n);
-    get_Empleado_direccion(p,d);
-    printf("%s\t\t%s\t\t\%d\n",n,d,get_Empleado_id(p));
-}

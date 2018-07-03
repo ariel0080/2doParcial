@@ -14,6 +14,9 @@ int main()
     ArrayList* lEmpleados_copia;
     FILE *fEmpleados;
     eEmpleado *aux;
+    int flagmap=0;
+    int f_secargo_archivo=0;
+
 
     int seguir=1;
     int opcion;
@@ -34,8 +37,9 @@ int main()
         printf(" 4. Calcular Sueldo\n");
         printf(" 5. Generar archivo sueldos\n");
         printf(" 0. Salir");
-        printf("\n-----------------------------\n\t Ingrese la Opcion: ");
+        printf("\n\n\ Ingrese la Opcion: ");
         scanf("%d",&opcion);
+        fflush(stdin);
 
         switch(opcion)
         {
@@ -46,6 +50,7 @@ int main()
             {
                 printf("\n COPIA EXITOSA\n");
                 lEmpleados_copia=al_clone(lEmpleados);
+                f_secargo_archivo=1;
 
 
             }
@@ -56,18 +61,24 @@ int main()
             LP();
             break;
         case 2:
-
-            if(lEmpleados_copia!=NULL)
+            if(f_secargo_archivo==1)
             {
+                if(lEmpleados_copia!=NULL)
+            {
+
                 printf("elementos: %d\n", al_len(lEmpleados_copia));
                 m_empleado(lEmpleados_copia);
             }
 
+            }
+            else{printf("\nNO HAY DATOS PARA GENERAR LISTADO\n");}
 
             LP();
             break;
         case 3:
-            if(lEmpleados_copia!=NULL)
+            if(f_secargo_archivo==1)
+            {
+                if(lEmpleados_copia!=NULL)
             {
                 printf("-------------Ordenar por nombre\n\n");
                 fsort=al_sort(lEmpleados_copia,compareeEmpleado,1);
@@ -78,23 +89,43 @@ int main()
             {
                m_empleado(lEmpleados_copia);
             }
+            }
+            else{printf("\nNO HAY DATOS PARA GENERAR LISTADO\n");}
+
 
             LP();
             break;
         case 4:
-
+            if(f_secargo_archivo==1)
+            {
             lEmpleados_copia->map(lEmpleados_copia,calc_suel_Empleado);
             printf("elementos: %d\n", al_len(lEmpleados_copia));
             m_empleado_sueldo(lEmpleados_copia);
+            flagmap=1;
+            }
+            else{printf("\nNO HAY DATOS PARA GENERAR SUELDOS\n");}
             LP();
             break;
         case 5:
-            guardarArchivo(lEmpleados_copia);
+            if(flagmap==1)
+            {
+                guardarArchivo(lEmpleados_copia);
+                printf("\nARCHIVO GENERADO CON EXITO\n");
+            }
+            else
+            {
+                printf("\nPRIMERO DEBE CALCULAR SUELDOS PARA GENERAR ARCHIVO. EJECUTE OPCION 4\n");
+            }
+
+
             LP();
             break;
         case 0:
             printf("elementos: %d", al_len(lEmpleados_copia));
             seguir=0;
+            LP();
+            break;
+        default:
             LP();
             break;
         }
