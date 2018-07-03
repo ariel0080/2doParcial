@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1530504049 source:c:\uso_array\ejemplo\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530504049 c:\uso_array\ejemplo\arraylist.h
+
+1530504049 source:c:\uso_array\ejemplo\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"ArrayList.h"
+	"Employee.h"
+
+1530504049 c:\uso_array\ejemplo\employee.h
+
+1530504049 source:c:\uso_array\ejemplo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1530504049 source:c:\uso_array\ejemplo\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1530504912 source:c:\test\uso_array\ejemplo\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530504912 c:\test\uso_array\ejemplo\arraylist.h
+
+1530504914 source:c:\test\uso_array\ejemplo\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"ArrayList.h"
+	"Employee.h"
+
+1530504914 c:\test\uso_array\ejemplo\employee.h
+
+1530504914 source:c:\test\uso_array\ejemplo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1530504916 source:c:\test\uso_array\ejemplo\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+
